@@ -1,19 +1,21 @@
 {
-	"name": "ics-blackout",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest",
-		"cf-typegen": "wrangler types"
-	},
-	"devDependencies": {
-		"@cloudflare/vitest-plugin": "^1.4.3",
-		"@types/node": "^26.6.11",
-		"typescript": "^5.5.2",
-		"vitest": "~5.0.3",
-		"wrangler": "^4.168.0"
-	}
+  "name": "ics-blackout",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "oxfmt": "^0.80.0",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.168.0"
+  },
+  "dependencies": {
+    "temporal-polyfill": "^1.0.8",
+    "zod": "^4.6.7"
+  }
 }
